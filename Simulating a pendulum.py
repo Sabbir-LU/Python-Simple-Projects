@@ -9,11 +9,11 @@ import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.animation import FuncAnimation
 
-g = 9.81       # Gravity (m/s^2)
-L = 1.0        # Length of the pendulum (m)
+g = 9.8       # Gravity (m/s^2)
+L = 2.0        # Length of the pendulum (m)
 theta0 = np.pi / 4  # Initial angle (radians)
 
-dt = 0.02  # Time step (s)
+dt = 0.05  # Time step (s)
 
 def theta(t, theta0, L, g):
     return theta0 * np.cos(np.sqrt(g / L) * t)
